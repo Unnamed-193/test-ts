@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+cd your-git-folder-path && npx validate-branch-name
+cd your-git-folder-path && npx --no -- commitlint --edit ${1}
+cd your-git-folder-path && npx --no -- commitlint --edit ${1}
